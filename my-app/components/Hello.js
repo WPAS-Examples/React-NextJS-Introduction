@@ -1,12 +1,10 @@
-export default function Hello(props) {
+export default function Hello({
+    fName = 'First Name',
+    lName = 'Last Name',
+  }) {
     return (
       <p>
-        Hello {props.fName} {props.lName}!
+        Hello {fName} {lName}!
       </p>
     );
   }
-
-  Hello.defaultProps = {
-    fName: 'First Name',
-    lName: 'Last Name',
-  };
